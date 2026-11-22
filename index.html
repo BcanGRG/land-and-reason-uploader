@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borderwise Uploader</title>
+<meta name="description" content="Borderwise Uploader is a personal script that uploads the Borderwise channel owner's own videos to their own YouTube channel.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <span class="name">Borderwise Uploader</span>
+    <nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+  </header>
+
+  <h1>A personal upload script for one YouTube channel</h1>
+  <p class="lead">Borderwise Uploader is a small command-line script that the owner of the
+  <a href="https://www.youtube.com/@borderwisegeo">Borderwise</a> YouTube channel runs on their own
+  computer to upload their own videos to that channel.</p>
+
+  <div class="card">
+    <p><strong>It is not a public app or service.</strong> There is nothing to download or sign up for,
+    and nobody other than the channel owner can sign in to it. This page exists because Google asks
+    every app that uses Google sign-in to have a home page and a privacy policy.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Uploads a finished video file and its thumbnail image to the owner's channel.</li>
+    <li>Sets that video's title, description, tags, category, visibility and scheduled publish time.</li>
+    <li>Checks whether an uploaded video has finished processing.</li>
+    <li>Reads the channel's own video list and public counters (views, subscribers) for a status report.</li>
+    <li>Can replace the channel's banner image when the owner asks it to.</li>
+  </ul>
+
+  <h2>Why it asks for Google access</h2>
+  <p>YouTube only accepts uploads from a signed-in channel owner. When the owner runs the script for the
+  first time, Google shows its consent screen and the owner allows two permissions for their own channel:</p>
+  <ul>
+    <li><code>youtube.upload</code>: upload videos to the channel.</li>
+    <li><code>youtube.force-ssl</code>: manage the channel's own videos and settings over a secure connection.</li>
+  </ul>
+  <p>The script talks to YouTube through the official
+  <a href="https://developers.google.com/youtube/v3">YouTube Data API</a> and to nothing else.</p>
+
+  <h2>What happens to data</h2>
+  <p>The sign-in key that Google issues is kept in a file on the owner's computer. It is not sent to any
+  server other than Google's, and no data is shared with or sold to anyone. The details are in the
+  <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2>Türkçe özet</h2>
+  <p>Borderwise Uploader, Borderwise YouTube kanalının sahibinin kendi bilgisayarında çalıştırdığı kişisel
+  bir yükleme betiğidir. Yalnızca kanal sahibinin kendi videolarını kendi kanalına yükler. Herkese açık bir
+  uygulama ya da hizmet değildir; başka kimse kullanamaz. Google'ın verdiği oturum anahtarı yalnızca kanal
+  sahibinin bilgisayarında durur ve hiçbir veri kimseyle paylaşılmaz.</p>
+
+  <footer>
+    <p>Contact: through the <a href="https://www.youtube.com/@borderwisegeo">Borderwise channel page</a> on YouTube.</p>
+  </footer>
+</main>
+</body>
+</html>
